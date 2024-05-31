@@ -34,12 +34,6 @@ public class LoginSteps extends Base {
         customerPage.clickCustomerDropDown();
     }
 
-//    @Then("the User Selects A Username")
-//    public void the_user_selects_your_name() {
-//        customerPage.selectCustomer(3);
-//        //customerPage.click_yourName_dropDownList("Ron Weasly");
-//    }
-
     @And("the User Selects A Username {string}")
     public void theUserSelectsAUsername(String customerYourName) {
         //customerPage.selectCustomer(2);
@@ -56,11 +50,6 @@ public class LoginSteps extends Base {
         accountPage.waitForElements();
         accountPage.verifyLoggedInUser(customer);
     }
-
-//    @Then("User Clicks on Account Dropdown List")
-//    public void user_clicks_on_account_dropdown_list() {
-//        accountPage.selectAcc();
-//    }
 
     @Then("User Clicks on Account {string} on Dropdown List")
     public void userClicksOnAccountOnDropdownList(String arg0) {
