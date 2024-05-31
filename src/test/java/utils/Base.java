@@ -2,9 +2,9 @@ package utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import pages.AccountPage;
-import pages.CustomerPage;
-import pages.Login;
+import Pages.AccountPage;
+import Pages.CustomerPage;
+import Pages.Login;
 
 public class Base {
     public final WebDriver driver = BrowserFactory.startBrowser("chrome", "https://www.way2automation.com/angularjs-protractor/banking/#/login");
